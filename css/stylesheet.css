@@ -1,0 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(to right, #4652ff, #6771ff, #858dff);
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.bio {
+    margin: 10px 0 30px;
+    font-size: 1em;
+    color: #dfdfdf;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    text-decoration: none;
+    padding: 15px;
+    background-color: #385f8a;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #8c9eb1;
+}
