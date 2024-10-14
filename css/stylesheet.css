@@ -69,7 +69,7 @@ h1 {
 .link-button::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 110%; /* Position above the button */
+    top: 110%; /* Position below the button */
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.75);
@@ -90,16 +90,16 @@ h1 {
     visibility: visible;
 }
 
-/* Adjusting Tooltip Arrow (Optional) */
+/* Adjusting Tooltip Arrow to Point Down */
 .link-button::before {
     content: '';
     position: absolute;
-    bottom: 100%; /* Position above the tooltip */
+    top: 100%; /* Position below the tooltip */
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: transparent transparent rgba(0, 0, 0, 0.75) transparent;
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s;
@@ -109,4 +109,12 @@ h1 {
 .link-button:hover::before {
     opacity: 1;
     visibility: visible;
+}
+
+/* Image Icon Styles */
+.link-button img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
