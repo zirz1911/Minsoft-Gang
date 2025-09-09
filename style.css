@@ -94,7 +94,17 @@ h6 {
 	background-color: #2388ed;
 }
 .nav-scroll .active {
-	position: relative;
+    position: relative;
+}
+
+/* Navbar dropdown menu font color */
+.navbar .dropdown-menu .dropdown-item {
+    color: #000e32 !important;
+}
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item.active {
+    color: #000e32 !important;
 }
 
 /* Banner บน */

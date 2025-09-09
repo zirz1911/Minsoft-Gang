@@ -20,14 +20,19 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Product</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Software</a> </li>
-        <!-- 
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Testimonials</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
-        -->
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0" data-i18n="nav.home">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1" data-i18n="nav.product">Product</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2" data-i18n="nav.software">Software</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6" data-i18n="nav.contact">Contact</a> </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span data-i18n="nav.language">Language</span>: <strong id="current-lang">EN</strong>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+            <a class="dropdown-item lang-select" href="#" data-lang="en">English</a>
+            <a class="dropdown-item lang-select" href="#" data-lang="th">ไทย</a>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -40,9 +45,9 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
-            <h2 class="white">Automation Everything</h2>
+            <h2 class="white" data-i18n="banner.title">Automation Everything</h2>
             <h6 class="white">Gemlogin GemPhoneFarm n8n<a href="http://w3Template.com" target="_blank" rel="dofollow" class="weblink"></a></h6>
-            <p class="banner-text white">Minsoft Thailand เป็นบริษัทที่มุ่งเน้นการพัฒนาซอฟต์แวร์การตลาดและระบบอัตโนมัติสำหรับธุรกิจ โดยมีผลิตภัณฑ์หลักคือ Maxcare, MaxPhoneFarm, CloudPhoneFarm ซึ่งเป็นโปรแกรมฟาร์มบัญชีเฟซบุ๊กและติ๊กตอกที่ช่วยให้ผู้ใช้สามารถจัดการและเพิ่มประสิทธิภาพการทำงานบนแพลตฟอร์มโซเชียลมีเดียได้อย่างมีประสิทธิภาพ</p>
+            <p class="banner-text white" data-i18n="banner.desc">Hi guys, I'm Paji welcome to my website. In this website I will show you every automation system I use.</p>
             <ul>
               <li><a href="https://line.me/ti/g2/i_viH8MgL8CQRN54fU6ocIYzSUstSJ0Zac8r8A?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank"><img src="images/gem-line-commu.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
               <li><a href="https://www.facebook.com/profile.php?id=61579265128834" target="_blank"><img src="images/gem-facebook.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
@@ -64,33 +69,33 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Hardware</h3>
+          <h3 data-i18n="hardware.title">Hardware</h3>
           <span class="line"></span>
-          <p>Box Phone For Automation</p>
+          <p data-i18n="hardware.subtitle">Box Phone For Automation</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/S7.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>Box Phone S7 Old Version</h5>
-                <p>Box Phone with Galaxy S7</p>
+                <h5 data-i18n="hardware.s7.title">Box Phone S7 Old Version</h5>
+                <p data-i18n="hardware.s7.desc">Box Phone with Galaxy S7</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/Note 8.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>Box Note 8 Old Version</h5>
-                <p>Box Phone with Galaxy Note 8</p>
+                <h5 data-i18n="hardware.note8_old.title">Box Note 8 Old Version</h5>
+                <p data-i18n="hardware.note8_old.desc">Box Phone with Galaxy Note 8</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/Note 8 New.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>Box Note 8 New Version</h5>
-                <p>Box Phone with Galaxy Note 8</p>
+                <h5 data-i18n="hardware.note8_new.title">Box Note 8 New Version</h5>
+                <p data-i18n="hardware.note8_new.desc">Box Phone with Galaxy Note 8</p>
               </div>
             </div>
                        
           </div>
-          <a href="https://lin.ee/y8A69hG" class="about-btn" target="_blank">Learn More</a> </div>
+          <a href="https://lin.ee/y8A69hG" class="about-btn" target="_blank" data-i18n="common.learn_more">Learn More</a> </div>
           <!------- <a href="https://lin.ee/62VGQKM" class="about-btn" target="_blank">Learn More</a> </div> ไลน์ Gemlogin-------> 
       </div>
     </div>
@@ -105,39 +110,39 @@
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Automate Software</h3>
+          <h3 data-i18n="software.title">Automate Software</h3>
           <span class="line"></span>
-          <p>Make your task automate</p>
+          <p data-i18n="software.subtitle">Make your task automate</p>
         </div>
         <div class="section-content text-center">
           <div class="row">
 
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/gemlogin-software.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>Gemlogin</h5>
-                <p>Automation Every Website<br>via Google Chrome
+                <h5 data-i18n="software.gemlogin.title">Gemlogin</h5>
+                <p data-i18n="software.gemlogin.desc">Automation Every Website<br>via Google Chrome
                 </p>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/gemphonefarm-software.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>GemPhoneFarm</h5>
-                <p>Automation Every Android App<br>via Real Phone or Emulator
+                <h5 data-i18n="software.gemphonefarm.title">GemPhoneFarm</h5>
+                <p data-i18n="software.gemphonefarm.desc">Automation Every Android App<br>via Real Phone or Emulator
                 </p>
               </div>
             </div>
             
             <div class="col-md-4">
               <div class="wow fadeInUp" data-wow-delay="0.2s"> <img src="images/n8n-software.png" class="img-fluid wow fadeInUp"/></i>
-                <h5>n8n</h5>
-                <p>Automation Platform<br>using HTTP Request<br>can use with Gemlogin and GemPhoneFarm
+                <h5 data-i18n="software.n8n.title">n8n</h5>
+                <p data-i18n="software.n8n.desc">Automation Platform<br>using HTTP Request<br>can use with Gemlogin and GemPhoneFarm
                 </p>
               </div>
             </div>
                         
           </div>
-          <a href="https://lin.ee/62VGQKM" class="about-btn">Learn More</a> </div>
+          <a href="https://lin.ee/62VGQKM" class="about-btn" data-i18n="common.learn_more">Learn More</a> </div>
       </div>
     </div>
   </div>
@@ -148,7 +153,7 @@
 <section class="video-section prelative text-center white">
   <div class="section-padding video-overlay">
     <div class="container">
-      <h3>Watch Now</h3>
+      <h3 data-i18n="video.title">Watch Now</h3>
       <i class="fa fa-play" id="video-icon" aria-hidden="true"></i>
       <div class="video-popup">
         <div class="video-src">
@@ -162,206 +167,15 @@
 </section>
 <!-------Video End-------> 
 
-<!-------Features Start
-<section class="feature section-padding" data-scroll-index='2'>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>Features</h3>
-          <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
-        </div>
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Fast Processing</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-                <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Low Power Consuming</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-                <div class="media-right icon-border"> <span class="fa fa-battery-full" aria-hidden="true"></span> </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                <div class="media-body text-right media-right-margin">
-                  <h5>Wifi Compatibility</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-                <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
-              </div>
-            </div>
-            <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Regular Updates</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-dollar-sign" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Save Money</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-              </div>
-              <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
-                <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
-                <div class="media-body text-left">
-                  <h5>Unlimited Storage</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-Features End-------> 
-
-<!-------Team Start
-<section class="team section-padding" data-scroll-index='3'>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>Our Team</h3>
-          <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
-        </div>
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.2s"> <img src="images/user1.jpg" class="img-fluid"/>
-                <h4>Nitu Singh</h4>
-                <p>Marketing Specialist</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.4s"> <img src="images/user2.jpg" class="img-fluid"/>
-                <h4>Yogesh Singh</h4>
-                <p>CEO & Founder</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-detail wow bounce" data-wow-delay="0.6s"> <img src="images/user3.jpg" class="img-fluid"/>
-                <h4>Nisha Sharma</h4>
-                <p>Web Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-Team End-------> 
-
-<!-------Testimonial Start
-<section class="testimonial section-padding" data-scroll-index='4'>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center white">
-          <h3>Testimonials</h3>
-          <span class="line"></span>
-          <p class="white">Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
-        </div>
-    
-      <div class="section-content">
-        <div class="row">
-          <div class="offset-md-2 col-md-8 col-sm-12">
-            <div class="slider">
-              <div class="slider-item">
-                <div class="test-img"><img src="images/user1.jpg" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>John Michal</span> Digital Designer</span> Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat.</div>
-              </div>
-              <div class="slider-item">
-                <div class="test-img"><img src="images/user3.jpg" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Steve Smith</span> App User</span> Euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v</div>
-              </div>
-              <div class="slider-item">
-                <div class="test-img"><img src="images/user3.jpg" alt="Placeholder" width="157" height="157"></div>
-                <div class="test-text"><span class="title"><span>Gordon Shaw</span> Blogger</span> Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-Testimonial End-------> 
-
-<!-------FAQ Start
-<section class="faq section-padding prelative" data-scroll-index='5'>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>Frequently Asked Questions</h3>
-          <span class="line"></span>
-          <p>Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
-        </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Nam tellus felis, dignissim quis dui ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
-              <h4>Mauris scelerisque, dui non faucibus vulputate ?</h4>
-              <p>Sed tempus in neque ac rhoncus. Phasellus vehicula, erat tempor malesuada egestas, mauris tellus malesuada erat, at vestibulum nulla ex et lectus. Nullam elit est, ultricies et tellus ac, euismod placerat orci.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Nullam elit est, ultricies et tellus ac ?</h4>
-              <p>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh. Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi. Curabitur id porta ipsum, et vestibulum dui.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
-              <h4>Suspendisse fermentum placerat enim, at pellentesque augue elit est ?</h4>
-              <p>Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh ?</h4>
-              <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
-            </div>
-            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
-              <h4>Donec commodo dapibus congue ?</h4>
-              <p>Nullam elit est, ultricies et tellus ac, euismod placerat orci fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-FAQ End-------> 
-
 <!-------Contact Start------->
 <section class="contact section-padding" data-scroll-index='6'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center">
-          <h3>Contact us</h3>
+          <h3 data-i18n="contact.title">Contact us</h3>
           <span class="line"></span>
-          <p>Reach us on social — faster than email.</p>
+          <p data-i18n="contact.subtitle">Reach us on social — faster than email.</p>
         </div>
         <div class="section-content">
           <div class="row justify-content-center">
@@ -370,9 +184,9 @@ FAQ End------->
               <a href="https://line.me/ti/g2/i_viH8MgL8CQRN54fU6ocIYzSUstSJ0Zac8r8A?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/line-oa.png" alt="LINE" class="social-icon"/>
-                  <h5 class="card-title">Gemlogin Line OA</h5>
-                  <p class="card-text">Join our LINE group for support, updates, and tips.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open LINE</span>
+                  <h5 class="card-title" data-i18n="contact.oa_title">Gemlogin Line OA</h5>
+                  <p class="card-text" data-i18n="contact.oa_desc">Join our LINE group for support, updates, and tips.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_line">Open LINE</span>
                 </div>
               </a>
             </div>
@@ -381,9 +195,9 @@ FAQ End------->
               <a href="https://line.me/ti/g2/i_viH8MgL8CQRN54fU6ocIYzSUstSJ0Zac8r8A?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/line-openchat.png" alt="LINE" class="social-icon"/>
-                  <h5 class="card-title">Gemlogin Openchat</h5>
-                  <p class="card-text">Join our LINE group for support, updates, and tips.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open LINE</span>
+                  <h5 class="card-title" data-i18n="contact.openchat_title">Gemlogin Openchat</h5>
+                  <p class="card-text" data-i18n="contact.openchat_desc">Join our LINE group for support, updates, and tips.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_line">Open LINE</span>
                 </div>
               </a>
             </div>
@@ -392,9 +206,9 @@ FAQ End------->
               <a href="https://line.me/ti/g2/i_viH8MgL8CQRN54fU6ocIYzSUstSJ0Zac8r8A?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/telegram-gem.png" alt="LINE" class="social-icon"/>
-                  <h5 class="card-title">Gemlogin Telegram</h5>
-                  <p class="card-text">Join our Telegram group for support, updates, and tips.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open Telegram</span>
+                  <h5 class="card-title" data-i18n="contact.telegram_title">Gemlogin Telegram</h5>
+                  <p class="card-text" data-i18n="contact.telegram_desc">Join our Telegram group for support, updates, and tips.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_telegram">Open Telegram</span>
                 </div>
               </a>
             </div>
@@ -403,9 +217,9 @@ FAQ End------->
               <a href="https://www.facebook.com/profile.php?id=61579265128834" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/facebook-gem.png" alt="Facebook" class="social-icon"/>
-                  <h5 class="card-title">Gemlogin Facebook</h5>
-                  <p class="card-text">Message us on Facebook and we’ll get back quickly.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open Facebook</span>
+                  <h5 class="card-title" data-i18n="contact.facebook_title">Gemlogin Facebook</h5>
+                  <p class="card-text" data-i18n="contact.facebook_desc">Message us on Facebook and we’ll get back quickly.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_facebook">Open Facebook</span>
                 </div>
               </a>
             </div>
@@ -414,9 +228,9 @@ FAQ End------->
               <a href="https://www.facebook.com/groups/1846804899232848" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/facebook-gem.png" alt="Facebook" class="social-icon"/>
-                  <h5 class="card-title">Gemlogin Group</h5>
-                  <p class="card-text">Gemlogin Community on facebook group.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open Facebook</span>
+                  <h5 class="card-title" data-i18n="contact.group_title">Gemlogin Group</h5>
+                  <p class="card-text" data-i18n="contact.group_desc">Gemlogin Community on facebook group.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_facebook">Open Facebook</span>
                 </div>
               </a>
             </div>
@@ -425,9 +239,9 @@ FAQ End------->
               <a href="https://www.youtube.com/@Gemlogin-TH" target="_blank" rel="noopener" class="card contact-card text-center h-100">
                 <div class="card-body">
                   <img src="images/youtube-gem.png" alt="Facebook" class="social-icon"/>
-                  <h5 class="card-title">Youtube Gemlogin</h5>
-                  <p class="card-text">Come visit our Youtube channel for Gemlogin video is here.</p>
-                  <span class="btn-grad w-100 text-uppercase">Open Facebook</span>
+                  <h5 class="card-title" data-i18n="contact.youtube_title">Youtube Gemlogin</h5>
+                  <p class="card-text" data-i18n="contact.youtube_desc">Come visit our Youtube channel for Gemlogin video is here.</p>
+                  <span class="btn-grad w-100 text-uppercase" data-i18n="contact.open_youtube">Open YouTube</span>
                 </div>
               </a>
             </div>
@@ -447,9 +261,9 @@ FAQ End------->
     <div class="row">
       <div class="col-md-12">
         <div class="sectioner-header text-center white">
-          <h3>Download Gemlogin App</h3>
+          <h3 data-i18n="download.title">Download Gemlogin App</h3>
           <span class="line"></span>
-          <p class="white">Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.</p>
+          <p class="white" data-i18n="download.desc">Try Gemlogin for free now!<br>Sign up today and create your page just as you imagined it.<br>No credit card required.</p>
         </div>
       </div>
       <div class="col-md-12">
@@ -470,7 +284,7 @@ FAQ End------->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <p>2018 &copy; Applight. Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+        <p data-i18n="footer.copy">2025 &copy; Minsgang Website</p>
       </div>
     </div>
   </div>
@@ -532,7 +346,7 @@ $(window).on("load",function (){
 	$('.navbar-logo img').attr('src','images/logo-black.png');
 	navbar.addClass("nav-scroll");
 	}else{
-	$('.navbar-logo img').attr('src','images/logo-white.png');
+	$('.navbar-logo img').attr('src','images/logo.png');
 	navbar.removeClass("nav-scroll");
 	}
 
@@ -545,6 +359,150 @@ $(window).on("load",function (){
 	topOffset: -63
 	});
 });
+
+// Simple i18n
+(function(){
+  var translations = {
+    en: {
+      'nav.home': 'Home',
+      'nav.product': 'Product',
+      'nav.software': 'Software',
+      'nav.contact': 'Contact',
+      'nav.language': 'Language',
+
+      'banner.title': 'Automation Everything',
+      'banner.desc': "Hi guys, I'm Paji welcome to my website. In this website I will show you every automation system I use.",
+
+      'hardware.title': 'Hardware',
+      'hardware.subtitle': 'Box Phone For Automation',
+      'hardware.s7.title': 'Box Phone S7 Old Version',
+      'hardware.s7.desc': 'Box Phone with Galaxy S7',
+      'hardware.note8_old.title': 'Box Note 8 Old Version',
+      'hardware.note8_old.desc': 'Box Phone with Galaxy Note 8',
+      'hardware.note8_new.title': 'Box Note 8 New Version',
+      'hardware.note8_new.desc': 'Box Phone with Galaxy Note 8',
+
+      'software.title': 'Automate Software',
+      'software.subtitle': 'Make your task automate',
+      'software.gemlogin.title': 'Gemlogin',
+      'software.gemlogin.desc': 'Automation Every Website<br>via Google Chrome',
+      'software.gemphonefarm.title': 'GemPhoneFarm',
+      'software.gemphonefarm.desc': 'Automation Every Android App<br>via Real Phone or Emulator',
+      'software.n8n.title': 'n8n',
+      'software.n8n.desc': 'Automation Platform<br>using HTTP Request<br>can use with Gemlogin and GemPhoneFarm',
+
+      'video.title': 'Watch Now',
+
+      'contact.title': 'Contact us',
+      'contact.subtitle': 'Reach us on social — faster than email.',
+      'contact.oa_title': 'Gemlogin Line OA',
+      'contact.oa_desc': 'Follow updates and contact our team via LINE OA.',
+      'contact.openchat_title': 'Gemlogin Openchat',
+      'contact.openchat_desc': 'Join our LINE group for support, updates, and tips.',
+      'contact.telegram_title': 'Gemlogin Telegram',
+      'contact.telegram_desc': 'Join our Telegram group for support, updates, and tips.',
+      'contact.facebook_title': 'Gemlogin Facebook',
+      'contact.facebook_desc': "Message us on Facebook and we'll get back quickly.",
+      'contact.group_title': 'Gemlogin Group',
+      'contact.group_desc': 'Gemlogin community on Facebook Group.',
+      'contact.youtube_title': 'Youtube Gemlogin',
+      'contact.youtube_desc': 'Visit our YouTube channel for Gemlogin videos.',
+      'contact.open_line': 'Open LINE',
+      'contact.open_telegram': 'Open Telegram',
+      'contact.open_facebook': 'Open Facebook',
+      'contact.open_youtube': 'Open YouTube',
+
+      'download.title': 'Download Gemlogin App',
+      'download.desc': 'Try Gemlogin for free now!<br>Sign up today and create your page just as you imagined it.<br>No credit card required.',
+
+      'common.learn_more': 'Learn More',
+      'footer.copy': '2025 © Minsgang Website'
+    },
+    th: {
+      'nav.home': 'หน้าแรก',
+      'nav.product': 'สินค้า',
+      'nav.software': 'ซอฟต์แวร์',
+      'nav.contact': 'ติดต่อ',
+      'nav.language': 'ภาษา',
+
+      'banner.title': 'สร้างระบบอัตโนมัติของคุณ',
+      'banner.desc': 'สวัสดีครับ ผมปะจิ ยินดีต้อนรับสู่เว็บไซต์ของผม ที่นี่ผมจะแชร์ระบบอัตโนมัติที่ผมใช้งานทั้งหมด',
+
+      'hardware.title': 'ฮาร์ดแวร์',
+      'hardware.subtitle': 'Box Phone สำหรับงานอัตโนมัติ',
+      'hardware.s7.title': 'Box Phone S7 รุ่นเก่า',
+      'hardware.s7.desc': 'Box Phone พร้อม Galaxy S7',
+      'hardware.note8_old.title': 'Box Phone Note 8 รุ่นเก่า',
+      'hardware.note8_old.desc': 'Box Phone พร้อม Galaxy Note 8',
+      'hardware.note8_new.title': 'Box Phone Note 8 รุ่นใหม่',
+      'hardware.note8_new.desc': 'Box Phone พร้อม Galaxy Note 8',
+
+      'software.title': 'ซอฟต์แวร์อัตโนมัติ',
+      'software.subtitle': 'ทำให้งานของคุณเป็นอัตโนมัติ',
+      'software.gemlogin.title': 'Gemlogin',
+      'software.gemlogin.desc': 'อัตโนมัติบนทุกเว็บไซต์<br>ผ่าน Google Chrome',
+      'software.gemphonefarm.title': 'GemPhoneFarm',
+      'software.gemphonefarm.desc': 'อัตโนมัติบนทุกแอป Android<br>ผ่านมือถือจริงหรืออีมูเลเตอร์',
+      'software.n8n.title': 'n8n',
+      'software.n8n.desc': 'แพลตฟอร์มอัตโนมัติ<br>ส่งคำสั่งผ่าน HTTP Request<br>ทำงานร่วมกับ Gemlogin และ GemPhoneFarm',
+
+      'video.title': 'รับชมตอนนี้',
+
+      'contact.title': 'ติดต่อเรา',
+      'contact.subtitle': 'ติดต่อเราผ่านโซเชียล เร็วกว่าอีเมล',
+      'contact.oa_title': 'Gemlogin Line OA',
+      'contact.oa_desc': 'ติดตามข่าวสารและติดต่อทีมงานผ่าน LINE OA',
+      'contact.openchat_title': 'Gemlogin Openchat',
+      'contact.openchat_desc': 'เข้าร่วมกลุ่ม LINE เพื่อขอความช่วยเหลือและอัปเดตต่างๆ',
+      'contact.telegram_title': 'Gemlogin Telegram',
+      'contact.telegram_desc': 'เข้าร่วมกลุ่ม Telegram เพื่อขอความช่วยเหลือและอัปเดต',
+      'contact.facebook_title': 'Gemlogin Facebook',
+      'contact.facebook_desc': 'ส่งข้อความหาเราใน Facebook แล้วเราจะตอบกลับอย่างรวดเร็ว',
+      'contact.group_title': 'Gemlogin Group',
+      'contact.group_desc': 'ชุมชน Gemlogin บน Facebook Group',
+      'contact.youtube_title': 'YouTube Gemlogin',
+      'contact.youtube_desc': 'เยี่ยมชมช่อง YouTube สำหรับวิดีโอเกี่ยวกับ Gemlogin',
+      'contact.open_line': 'เปิด LINE',
+      'contact.open_telegram': 'เปิด Telegram',
+      'contact.open_facebook': 'เปิด Facebook',
+      'contact.open_youtube': 'เปิด YouTube',
+
+      'download.title': 'ดาวน์โหลดแอป Gemlogin',
+      'download.desc': 'ลองใช้ Gemlogin ฟรีตอนนี้!<br>สมัครวันนี้และสร้างหน้าของคุณได้ตามต้องการ<br>ไม่ต้องใช้บัตรเครดิต',
+
+      'common.learn_more': 'เรียนรู้เพิ่มเติม',
+      'footer.copy': '2025 © เว็บไซต์ Minsgang'
+    }
+  };
+
+  function applyI18n(lang){
+    var dict = translations[lang] || translations.en;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      var val = (dict && dict[key]) || translations.en[key] || '';
+      if(typeof val === 'string'){
+        el.innerHTML = val;
+      }
+    });
+    var cur = document.getElementById('current-lang');
+    if(cur){ cur.textContent = lang.toUpperCase(); }
+    localStorage.setItem('lang', lang);
+  }
+
+  // Bind events
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('.lang-select');
+    if(t){
+      e.preventDefault();
+      var lang = t.getAttribute('data-lang') || 'en';
+      applyI18n(lang);
+    }
+  });
+
+  // Initialize on load
+  var saved = localStorage.getItem('lang') || 'en';
+  applyI18n(saved);
+})();
 
 </script>
 </body>
